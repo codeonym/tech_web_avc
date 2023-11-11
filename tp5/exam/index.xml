@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE bibliotheque SYSTEM "index.dtd">
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<bibliotheque>
+  <livre>
+    <titre>Pain Nu</titre>
+    <auteur>Ahmed Choukri</auteur>
+    <ref>Biographie-C-15</ref>
+  </livre>
+  <livre>
+    <titre>Le chien des Baskerville</titre>
+    <auteur>Sir Arthur Conan Doyle</auteur>
+    <ref>Policier-D-3</ref>
+  </livre>
+  <livre>
+    <titre>La valeur des valeurs </titre>
+    <ref> Future-H-1</ref>
+    <auteur>Mahdi Elmandjra</auteur>
+  </livre>
+</bibliotheque>

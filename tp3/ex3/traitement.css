@@ -1,0 +1,207 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("./montserrat.ttf");
+}
+:root{
+  --color-grey:#eee;
+  --color-white:#fff;
+  --color-white-40:#ffffff7e;
+  --color-white-70:#ffffffc3;
+  --color-brown:#555;
+  --color-red:#f05454;
+  --color-yellow:#ffcc00;
+  --color-black:#000;
+  --color-grad:#f05454;
+  --color-grad-70:#f05454be;
+  --color-grad-40:#f0545472;
+  --color-grad-10:#f0545426;
+  --col-blue:#85b7f4;
+
+}
+
+body {
+  font-family: "montserrat" ,"cairo";
+  min-height: 100vh;
+  background:var(--col-blue);
+  position: relative;
+  overflow: hidden;
+  animation: slideIn .5s ease-in 0.2s;
+  transition: all 0.5s linear;
+  flex-direction: column;
+  gap:20px;
+  position: relative;
+  overflow: hidden;
+}
+body::before,body::after {
+  content: "";
+  width:3000px;
+  height:1000px;
+  background-color: #3d84db;
+  border-radius:50%;
+  inset:50% auto auto 0%;
+  position:absolute;
+  z-index:-1;
+}
+body::before {
+  animation: bounceSide 5s ease-in infinite alternate;
+}
+body::after {
+  inset:50% 0% auto auto;
+  animation: bounceSide 5s ease-in  1.5s infinite alternate;
+  background-color: #5b9ceb;
+}
+body *{
+  animation: slideIn .5s ease-in 0.2s;
+  transition: all 0.5s linear;
+  transition-delay: 0.8s;
+}
+@keyframes bounceSide {
+  from {
+    transform:translate(0px,0px) rotate(0deg);
+  }
+  to {
+    transform:translate(600px,0px) rotate(15deg);
+  }
+  
+}
+@keyframes slideIn {
+  from{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+}
+.flx{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container {
+  text-align: center;
+  color:var(--color-white-70);
+  background-color:var(--color-red);
+  width: 500px;
+  height: 400px;
+  box-shadow: -10px 10px 0px 0px var(--color-grad-70),
+  -20px 20px 0px 0px var(--color-grad-40),
+  -30px 30px 0px 0px var(--color-grad-10);
+  animation: shadowmorph   1s   ease-in ;
+}
+
+@keyframes shadowmorph {
+  from{
+    opacity:0;
+    box-shadow: none;
+  }
+  to {
+    box-shadow: -10px 10px 0px 0px var(--color-grad-70),
+    -20px 20px 0px 0px var(--color-grad-40),
+    -30px 30px 0px 0px var(--color-grad-10);
+  }
+  
+}
+.error-container .error {
+  height:100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.error-container .error h1 {
+  margin-top:120px;
+  font-size:50px;
+  letter-spacing: 5px;
+  width:100%;
+}
+
+.error-container .error p {
+  color:var(--color-white-40);
+  margin-top:15px;
+}
+
+.error-container .error::before,
+.error-container .error::after {
+  content:"ERROR404";
+  color:var(--color-white);
+  font-size: 90px;
+  font-weight: 900;
+  left:50%;
+  opacity:.2;
+  top:50%;
+  transform:translate(-50%,-50%);
+  position:absolute;
+  transition: ease-in all 1s;
+}
+
+.error-container .error::before{
+  animation: slip 5s 1s ease-in  infinite alternate;
+  color:var(--color-black);
+  z-index: 2;
+  opacity:.5;
+}
+
+@keyframes slip {
+  from{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+/*####################################*/
+.card {
+  border-radius: 8px;;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+  gap:20px;
+  box-shadow: inset 0px 0px 6px 0px #00000030, -20px 20px 20px #05050530;
+  padding:10px;
+}
+
+.card .card-ti {
+  gap:10px;
+}
+.card .card-ti  h1 {
+  /* border:2px solid var(--color-white); */
+  /* background:var(--color-black); */
+  padding:20px  ;text-shadow : 2px 2px 5px var(--color-black);
+  color:var(--color-black);
+  font-weight: 200;
+  letter-spacing: 1px;;
+  outline-offset: 10px;
+}
+.card .card-ti  img {
+  width:150px;
+}
+table {
+  color:var(--color-white);
+  position:relative;
+  width:700px;
+  border-color:var(--color-white);
+}
+
+table tr:first-child td {
+  background:var(--color-black);
+  color:var(--color-white);
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+table tr:not(:first-child) td:first-child {
+  color:var(--color-black);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+table td {
+  padding:20px;
+  min-width: 200px;
+  height:60px;
+  text-align:center;
+}

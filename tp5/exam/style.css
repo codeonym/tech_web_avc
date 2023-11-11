@@ -1,0 +1,16 @@
+livre{
+display:block;
+margin-left:10pt;
+margin-bottom:5pt;
+font-size:12pt
+}
+titre{
+margin-right:10pt;
+color:blue;
+}
+auteur{
+margin-right:10pt;
+}
+ref{
+color:red;
+}

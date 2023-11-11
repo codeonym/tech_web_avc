@@ -1,0 +1,10 @@
+<!ELEMENT BibFilm (film*)>
+<!ELEMENT film (titre,genre*,realisateur+,acteur*,datePublication ,dateRealisation?,pays+,duree)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT realisateur (#PCDATA)>
+<!ELEMENT acteur (#PCDATA)>
+<!ELEMENT datePublication (#PCDATA)>
+<!ELEMENT dateRealisation (#PCDATA)>
+<!ELEMENT pays (#PCDATA)>
+<!ELEMENT duree (#PCDATA)>

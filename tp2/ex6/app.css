@@ -1,0 +1,149 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --color-grey:#eee;
+  --color-white:#fff;
+  --color-white-40:#ffffff7e;
+  --color-white-70:#ffffffc3;
+  --color-brown:#555;
+  --color-red:#f05454;
+  --color-yellow:#ffcc00;
+  --color-black:#000;
+  --color-grad:#f05454;
+  --color-grad-70:#f05454be;
+  --color-grad-40:#f0545472;
+  --color-grad-10:#f0545426;
+
+}
+
+body {
+  min-height: 100vh;
+  background:#fff;
+  position: relative;
+  overflow: hidden;
+  animation: slideIn .5s ease-in 0.2s;
+  transition: all 0.5s linear;
+}
+
+body *{
+  animation: slideIn .5s ease-in 0.2s;
+  transition: all 0.5s linear;
+  transition-delay: 0.8s;
+}
+body::before {
+  content: "";
+  width:100vw;
+  height:100vh;
+  clip-path:  polygon(0 0, 100% 0, 100% 51%, 0 51%);
+  background-color: #000;
+  position: absolute;
+  z-index: -1;
+}
+@keyframes slideIn {
+  from{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+}
+.flx{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container {
+  text-align: center;
+  color:var(--color-white-70);
+  background-color:var(--color-red);
+  width: 500px;
+  height: 400px;
+  box-shadow: -10px 10px 0px 0px var(--color-grad-70),
+  -20px 20px 0px 0px var(--color-grad-40),
+  -30px 30px 0px 0px var(--color-grad-10);
+  animation: shadowmorph   2s   ease-in ;
+}
+
+@keyframes shadowmorph {
+  from{
+    opacity:0;
+    box-shadow: none;
+  }
+  to {
+    box-shadow: -10px 10px 0px 0px var(--color-grad-70),
+    -20px 20px 0px 0px var(--color-grad-40),
+    -30px 30px 0px 0px var(--color-grad-10);
+  }
+  
+}
+.error-container .error {
+  height:100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.error-container .error h1 {
+  margin-top:120px;
+  font-size:50px;
+  letter-spacing: 5px;
+  width:100%;
+}
+
+.error-container .error p {
+  color:var(--color-white-40);
+  margin-top:15px;
+}
+
+.error-container .error::before,
+.error-container .error::after {
+  content:"ERROR404";
+  color:var(--color-white);
+  font-size: 90px;
+  font-weight: 900;
+  left:50%;
+  opacity:.2;
+  top:50%;
+  transform:translate(-50%,-50%);
+  position:absolute;
+  transition: ease-in all 1s;
+}
+
+.error-container .error::before{
+  animation: slip 5s 1s ease-in  infinite alternate;
+  color:var(--color-black);
+  z-index: 2;
+  opacity:.5;
+}
+
+@keyframes slip {
+  from{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+/*####################################*/
+
+table {
+  color:var(--color-brown);
+  position:relative;
+  backdrop-filter: invert(1);
+}
+
+table tr:first-child td {
+  color:#f05454;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: 900;
+}
+table td {
+  padding:20px;
+  min-width: 200px;
+  height:60px;
+  text-align:center;
+}

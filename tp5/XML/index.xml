@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE results SYSTEM "index.dtd">
+<results>
+  <game id="rff453">
+    <team name="howlers" play_at_home="yes">
+      <goal player="mark colmann" penalty="yes" time="75:42" />
+      <card type="yellow" player="ablerto deminos" />
+      <card type="yellow" player="picaso matrins" />
+    </team>
+    <team name="leakers">
+      <card type="yellow" player="uerik delfamos" />
+      <card type="red" player="neckolas goodman" />
+      <goal player="reco delma" time="15:22" />
+      <goal player="eric brownie" time="95:01" />
+    </team>
+  </game>
+  <game id="rff454">
+    <team name="howlers" play_at_home="yes">
+      <goal player="mark colmann" penalty="yes" time="75:42" />
+      <card type="yellow" player="ablerto deminos" />
+      <card type="yellow" player="picaso matrins" />
+    </team>
+    <team name="leakers"/>
+  </game>
+  <game id="rff455">
+    <team name="howlers" play_at_home="yes">
+      <goal player="mark colmann" penalty="yes" time="75:42" />
+    </team>
+    <team name="leakers">
+      <card type="red" player="neckolas goodman" />
+    </team>
+  </game>
+  <game id="rff456">
+    <team name="howlers" play_at_home="yes">
+      <goal player="mark colmann" penalty="yes" time="75:42" />
+      <card type="yellow" player="picaso matrins" />
+    </team>
+    <team name="leakers">
+      <goal player="eric brownie" time="95:01" />
+    </team>
+  </game>
+</results>

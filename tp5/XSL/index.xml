@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE class SYSTEM "index.dtd">
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<class list-of="students">
+  <student rollno="393">
+    <firstname>Dinkar</firstname>
+    <lastname>Kad</lastname>
+    <nickname>Dinkar</nickname>
+    <marks>85</marks>
+  </student>
+  <student rollno="493">
+    <firstname>Vaneet</firstname>
+    <lastname>Gupta</lastname>
+    <nickname>Vinni</nickname>
+    <marks>95</marks>
+  </student>
+  <student rollno="593">
+    <firstname>Jasvir</firstname>
+    <lastname>Singh</lastname>
+    <nickname>Jazz</nickname>
+    <marks>90</marks>
+  </student>
+  <student rollno="693">
+    <firstname>vir</firstname>
+    <lastname>Siri</lastname>
+    <nickname>Jack</nickname>
+    <marks>60</marks>
+  </student>
+  <student rollno="793">
+    <firstname>madhor</firstname>
+    <lastname>Sing</lastname>
+    <nickname>comar</nickname>
+    <marks>90</marks>
+  </student>
+  <student rollno="893">
+    <firstname>jack</firstname>
+    <lastname>Rusu</lastname>
+    <nickname>Philo</nickname>
+    <marks>94</marks>
+  </student>
+  <student rollno="993">
+    <firstname>Amitab</firstname>
+    <lastname>Batchan</lastname>
+    <nickname>Zindigi</nickname>
+    <marks>99.99</marks>
+  </student>
+  <student rollno="1093">
+    <firstname>Raj</firstname>
+    <lastname>Sing</lastname>
+    <nickname>Rajkumar</nickname>
+    <marks>70</marks>
+  </student>
+  <student rollno="1193">
+    <firstname>krinshna</firstname>
+    <lastname>namgal</lastname>
+    <nickname>krish</nickname>
+    <marks>40</marks>
+  </student>
+  <student rollno="1293">
+    <firstname>Serouj</firstname>
+    <lastname>namdo</lastname>
+    <nickname>koto</nickname>
+    <marks>51.2</marks>
+  </student>
+</class>

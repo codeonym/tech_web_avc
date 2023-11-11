@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BibFilm SYSTEM "TestFilmsAttr.dtd">
+<?xmlstylesheet href="style.css"type="text/css"?>
+<BibFilm>
+  <film>
+    <titre genre="Drame" duree="2H00">Fleur du Désert</titre>
+    <realisateur>Sherry Hormann</realisateur>
+    <acteur>Liya Kebede</acteur>
+    <acteur>Sally Hawkins</acteur>
+    <acteur>Timothy Spall</acteur>
+    <date publication="2010" />
+    <pays>Royaume-Uni</pays>
+  </film>
+  <film>
+    <titre genre="Drame, Historique" duree="1H55">La Rafle</titre>
+    <realisateur>Rose Bosch</realisateur>
+    <acteur>Jean Reno</acteur>
+    <acteur>Gad Elmaleh</acteur>
+    <acteur>Mélanie Laurent</acteur>
+    <date publication="2009" />
+    <pays>France</pays>
+  </film>
+  <film>
+    <titre genre="Comédie" duree="1H45">L'arnacoeur</titre>
+    <realisateur>Pascal Chaumeil</realisateur>
+    <acteur>Romain Duris</acteur>
+    <acteur>Vanessa Paradis</acteur>
+    <acteur>Julie Ferrier</acteur>
+    <date publication="2009" />
+    <pays>France</pays>
+  </film>
+  <film>
+    <titre genre="Thriller" duree="2H17">Shutter Island</titre>
+    <realisateur>Martin Scorsese</realisateur>
+    <acteur>Leonardo DiCaprio</acteur>
+    <acteur>Mark Ruffalo</acteur>
+    <acteur>Ben Kingsley</acteur>
+    <date publication="2008" />
+    <pays>Etats-Unis</pays>
+  </film>
+  <film>
+    <titre genre="Documentaire" duree="1H43">Océans</titre>
+    <realisateur>Jacques Cluzaud</realisateur>
+    <realisateur>Jacques Perrin</realisateur>
+    <date publication="27 janvier 2010" realisation="2007" />
+    <pays>France</pays>
+  </film>
+  <film>
+    <titre genre="Comédie dramatique, Musical" duree="1H35">Les Choristes</titre>
+    <realisateur>Christophe Barratier</realisateur>
+    <acteur>Gérard Jugnot</acteur>
+    <acteur>François Berléand</acteur>
+    <acteur>Jacques Perrin</acteur>
+    <date publication="2003" />
+    <pays>France</pays>
+  </film>
+  <film>
+    <titre genre="Drame, Guerre, Guerre" duree="2H15">Un long dimanche de fiançailles</titre>
+    <realisateur>Jean-Pierre Jeunet</realisateur>
+    <acteur>Marion Cotillard</acteur>
+    <acteur>Jodie Foster</acteur>
+    <acteur>Clovis Cornillac</acteur>
+    <date publication="2004" />
+    <pays>Etats-Unis</pays>
+    <pays>France</pays>
+  </film>
+  <film>
+    <titre genre="Action, Science-fiction, Action" duree="2H15">Robot</titre>
+    <realisateur>Alex Proyas</realisateur>
+    <acteur>Will Smith</acteur>
+    <acteur>Bridget Moynahan</acteur>
+    <acteur>Chi Mc Bride</acteur>
+    <date publication="2003" />
+    <pays>Etats-Unis</pays>
+  </film>
+  <film>
+    <titre genre="Comédie" duree="1H45">Esprit de famille</titre>
+    <realisateur>Thomas Bezucha</realisateur>
+    <acteur>Will Smith</acteur>
+    <acteur>Sarah Jessica Parker</acteur>
+    <acteur>Claire Danes</acteur>
+    <date publication="2005" />
+    <pays>Americain</pays>
+  </film>
+</BibFilm>

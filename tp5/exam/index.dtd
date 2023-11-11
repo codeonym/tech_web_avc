@@ -1,0 +1,5 @@
+<!ELEMENT bibliotheque (livre*)>
+<!ELEMENT livre (titre,((auteur,ref)|(ref,auteur)))>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT ref (#PCDATA)>

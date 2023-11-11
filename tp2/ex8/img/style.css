@@ -1,0 +1,222 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #3d4655;
+  position:absolute;
+  width:100%;
+}
+.error {
+  width:90%;
+  height:120px;
+  background-color: #f054543c;
+  color:#fff;
+  border: 2px solid #f05454;
+  position:fixed;
+  inset:15% auto auto 50%;
+  border-radius: 5px;
+  transform:translate(-500%, -50%);
+  z-index: 100;
+  transition:all 1s ease-in-out;
+  transition-delay:0.2s;
+}
+.error button {
+  position:absolute;
+  inset:20px 20px auto auto;
+  padding:10px;
+  border-radius: 50%;
+  background-color:transparent;
+  border:2px solid #f05454;
+  outline: none;
+  transition:all linear .3s;
+  transform:scale(1);
+}
+.error button:hover {
+  clip-path: circle(50% at 50% 50%);
+  border-color: #fff;
+  transform:scale(1.2);
+}
+.error button::after {
+  content:'';
+  position:absolute;
+  inset:50% auto auto 50%;
+  transform:translate(-50%,-50%);
+  width:5px;
+  height:5px;
+  border-radius: 50%;
+  background-color:#f05454;
+  transition:all 0.3s linear;
+  clip-path: circle(25% at 50% 50%);
+  
+}
+.error button:hover::after {
+  background-color: #fff;
+  width:80%;
+  height: 80%;;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+.flx {
+  display:flex;align-items: center;justify-content: center;
+}
+.container {
+  width: 500px;
+  padding:15px;
+  gap:50px;
+  background-color: #fff;
+  border-radius: 5px;
+  position:relative;
+  flex-direction: column;
+  color:#fff;
+  border-radius: 20px;
+  padding:50px 10px;
+  box-shadow: rgb(24, 37, 50) 0px 20px 30px -10px;
+}
+.container form  {
+  width:100%;
+  flex-direction: column;
+  gap:20px;
+}
+.container form > * {
+  display:block;
+  padding:10px;
+  text-align: center;
+  font-size:16px;
+  border:none;
+  outline:none;
+}
+.container [type="file"] {
+  display:none;
+}
+.container label{
+  color:#3d4655;
+  width:400px;
+  height:200px;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+  background-color: #fff;
+  gap:20px;
+  border:2px dashed #eb072d;
+  border-radius: 30px;
+}
+.container .uploads{
+  display:none;
+}
+.container .uploads.scroll{
+  display:block;
+  width:400px;
+  margin:10px auto;
+  max-height:300px;
+  border:2px solid #eee;
+  color:#555;
+  padding: 0px;
+  overflow-Y:scroll;
+  overflow-x: hidden;
+}
+.container .uploads .item {
+  padding:15px 10px;
+  width:100%;
+  font-size: 16px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.container  .uploads .item:not(:last-child){
+  border-bottom:2px solid #c5c5c5;
+}
+.container label img{
+  width:50px;
+}
+.container label span {
+  color:#eb072d;
+}
+.container [type="submit"]{
+  text-transform: uppercase;
+  position:relative;
+  background-color:#eb072d;
+  font-weight: 300;
+  flex:0.2;
+  color:#fff;
+  padding:10px 50px;
+  border-radius: 50px;;
+}
+
+
+.container .results{
+  padding:20px;
+  justify-content: flex-start;
+  flex-direction: column;
+  width:100%;
+  gap:5px;
+}
+.container .results .content {
+  max-height:400px;
+  overflow-y: scroll;
+  padding:0px;
+  animation: movein .5s ease-in ;
+}
+.container .results .content::-webkit-scrollbar,
+.container .uploads::-webkit-scrollbar {
+  width:0.5rem;
+}
+
+.container .results .content::-webkit-scrollbar-track ,
+.container .uploads::-webkit-scrollbar-track{
+  box-shadow:inset 0 0 3px rgba(0,0,0,.3);
+}
+
+.container .results .content::-webkit-scrollbar-thumb,
+.container .uploads::-webkit-scrollbar-thumb {
+  /* outline:1px solid slategrey; */
+  border-radius: 10px;
+  background:slategrey;
+}
+
+
+@keyframes movein {
+  from {
+    height:0px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }to {
+    height:400px;;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+}
+.container .results * {
+  padding:10px;
+  width:100%;
+  background-color: #373b43;
+}
+.container .results h2 {
+  background-color: #464b55;
+  margin-top:50px;
+  padding:20px;
+  text-transform: uppercase;
+  letter-spacing:5px;
+  width:100%;
+  text-align: center;
+}
+.container .results h3 {
+  background-color: #3d424c;
+  padding:10px;
+  text-align: center;
+  letter-spacing:2px;
+}
+.container .results h3 span {
+  font-size:22px;
+  background-color: transparent;
+}
+.container .results div span {
+  color:#d8d8d8;
+}
+
+.container .results .cnt:not(:last-child) {
+  border-bottom:2px solid #2c3037;
+  width:100%;
+  padding:auto 20px;
+}

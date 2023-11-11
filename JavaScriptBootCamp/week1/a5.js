@@ -1,0 +1,1 @@
+console.table(["Elzero","Web","School","Is","Cool"]);

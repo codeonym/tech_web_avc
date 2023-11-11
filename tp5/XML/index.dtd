@@ -1,0 +1,13 @@
+<!ELEMENT results (game*)>
+<!ELEMENT game (team+)>
+<!ATTLIST game id ID #REQUIRED>
+<!ELEMENT team (card|goal)*>
+<!ATTLIST team name CDATA #REQUIRED>
+<!ATTLIST team play_at_home (yes|no) "no" >
+<!ELEMENT card EMPTY>
+<!ELEMENT goal EMPTY>
+<!ATTLIST card type (yellow|red) #REQUIRED>
+<!ATTLIST card player CDATA #REQUIRED>
+<!ATTLIST goal player CDATA #REQUIRED>
+<!ATTLIST goal penalty (yes|no) "no">
+<!ATTLIST goal time CDATA #REQUIRED>

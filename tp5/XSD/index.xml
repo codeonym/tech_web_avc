@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<lettera xmlns:xsi="http://www.w3c.org/2001/XMLSchema_instance"
+  xsi:schemaLocation="index.xsd"
+> gentle <cliente>tttttt</cliente>, eefrfrfrtrttrtr <ordine
+    num="1234">
+    <articolo>
+      <codice>1</codice>
+      <desc>articolo 1</desc>
+    </articolo>
+    <articolo>
+      <codice>5</codice>
+      <desc>articolo 5</desc>
+    </articolo>
+  </ordine> dsfdfdfdfdfdfdfdfdfdfdfdfdfdfdf <responsabile><tit>
+  dr.</tit>Mario rossi</responsabile>
+</lettera>

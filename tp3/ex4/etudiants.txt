@@ -1,0 +1,10 @@
+bouarour;ayoub;bouarourayoub0[AT]gmail[DOT]com;homme;WebTechAvc;rabat;PHP;pdf
+alioli;mohammed;donor123123[AT]gmail[DOT]com;homme;Réseaux;oujda;PHP C;docx
+mokhtari;nabil;mm[AT]gmail[DOT]com;homme;Réseaux;oujda;PHP C C++ JAVA;pdf
+zerwali;saida;sa[AT]gmail[DOT]com;femme;Informatiques;oujda;C C++;docx
+hhh//;ff;unset;homme;Réseaux;oujda;PHP C;pdf
+ppp;SRV;donor405[AT]gmail[DOT]com;homme;Informatiques;rabat;PHP;c
+ppp;mohammed;bouarourayoub7[AT]gmail[DOT]com;femme;WebTechAvc;rabat;PHP;docx
+test;test;test[AT]gmail[DOT]com;homme;Réseaux;rabat;PHP C JAVA;pdf
+bouarour;ayoub;donor12ghg3123[AT]gmail[DOT]com;homme;Informatiques;oujda;PHP;c
+oumari;idriss;bouarourayoub944[AT]gmail[DOT]com;homme;Informatiques;oujda;C;c

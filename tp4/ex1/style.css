@@ -1,0 +1,27 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {
+  background-color:#303030;
+  color:#fff;
+}
+table {
+  max-width:900px;
+  min-width: 90%;
+  margin:100px auto;
+
+}
+
+td {
+  padding:10px 20px;
+  text-align: center;
+}
+
+tr:first-child td {
+  background-color:#000;
+  font-size: 30px;
+  font-weight:900;
+}

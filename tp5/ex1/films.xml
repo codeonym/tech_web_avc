@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BibFilm SYSTEM "TestFilms.dtd">
+<?xmlstylesheet href="style.css"type="text/css"?>
+<?xml-stylesheet type="text/css" href=
+"style.css"?>
+<BibFilm>
+  <film>
+    <titre>Fleur du Désert</titre>
+    <genre>Drame</genre>
+    <realisateur>Sherry Hormann</realisateur>
+    <acteur>Liya Kebede</acteur>
+    <acteur>Sally Hawkins</acteur>
+    <acteur>Timothy Spall</acteur>
+    <datePublication>2010</datePublication>
+    <pays>Royaume-Uni</pays>
+    <duree>2H00</duree>
+  </film>
+  <film>
+    <titre>La Rafle</titre>
+    <genre>Drame</genre>
+    <genre>Historique</genre>
+    <realisateur>Rose Bosch</realisateur>
+    <acteur>Jean Reno</acteur>
+    <acteur>Gad Elmaleh</acteur>
+    <acteur>Mélanie Laurent</acteur>
+    <datePublication>2009</datePublication>
+    <pays>France</pays>
+    <duree>1H55</duree>
+  </film>
+  <film>
+    <titre>L'arnacoeur</titre>
+    <genre>Comédie</genre>
+    <realisateur>Pascal Chaumeil</realisateur>
+    <acteur>Romain Duris</acteur>
+    <acteur>Vanessa Paradis</acteur>
+    <acteur>Julie Ferrier</acteur>
+    <datePublication>2009</datePublication>
+    <pays>France</pays>
+    <duree>1H45</duree>
+  </film>
+  <film>
+    <titre>Shutter Island</titre>
+    <genre>Thriller</genre>
+    <realisateur>Martin Scorsese</realisateur>
+    <acteur>Leonardo DiCaprio</acteur>
+    <acteur>Mark Ruffalo</acteur>
+    <acteur>Ben Kingsley</acteur>
+    <datePublication>2008</datePublication>
+    <pays>Etats-Unis</pays>
+    <duree>2H17</duree>
+  </film>
+  <film>
+    <titre>Océans</titre>
+    <genre>Documentaire</genre>
+    <realisateur>Jacques Cluzaud</realisateur>
+    <realisateur>Jacques Perrin</realisateur>
+    <datePublication>27 janvier 2010</datePublication>
+    <dateRealisation>2007</dateRealisation>
+    <pays>France</pays>
+    <duree>1H43</duree>
+  </film>
+  <film>
+    <titre>Les Choristes</titre>
+    <genre>Comédie dramatique</genre>
+    <genre>Musical</genre>
+    <realisateur>Christophe Barratier</realisateur>
+    <acteur>Gérard Jugnot</acteur>
+    <acteur>François Berléand</acteur>
+    <acteur>Jacques Perrin</acteur>
+    <datePublication>2003</datePublication>
+    <pays>France</pays>
+    <duree>1H35</duree>
+  </film>
+  <film>
+    <titre>Un long dimanche de fiançailles</titre>
+    <genre>Drame</genre>
+    <genre>Guerre</genre>
+    <genre>Romance</genre>
+    <realisateur>Jean-Pierre Jeunet</realisateur>
+    <acteur>Marion Cotillard</acteur>
+    <acteur>Jodie Foster</acteur>
+    <acteur>Clovis Cornillac</acteur>
+    <datePublication>2004</datePublication>
+    <pays>Etats-Unis</pays>
+    <pays>France</pays>
+    <duree>2H15</duree>
+  </film>
+  <film>
+    <titre>Robot</titre>
+    <genre>Action</genre>
+    <genre>Science-fiction</genre>
+    <genre>Action</genre>
+    <realisateur>Alex Proyas</realisateur>
+    <acteur>Will Smith</acteur>
+    <acteur>Bridget Moynahan</acteur>
+    <acteur>Chi Mc Bride</acteur>
+    <datePublication>2003</datePublication>
+    <pays>Etats-Unis</pays>
+    <duree>2H15</duree>
+  </film>
+  <film>
+    <titre>Esprit de famille</titre>
+    <genre>Comédie</genre>
+    <realisateur>Thomas Bezucha</realisateur>
+    <acteur>Will Smith</acteur>
+    <acteur>Sarah Jessica Parker</acteur>
+    <acteur>Claire Danes</acteur>
+    <datePublication>2005</datePublication>
+    <pays>Americain</pays>
+    <duree>1H45</duree>
+  </film>
+</BibFilm>

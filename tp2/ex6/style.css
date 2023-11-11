@@ -1,0 +1,104 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color:#555;
+}
+::selection {
+  color:#fff;
+  background-color: #ff5722;
+}
+.flx {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  height:100vh;
+  background-color: #5e5e5e;
+}
+
+.container {
+  background-color: #fff;
+  width:600px;
+  flex-direction: column;
+  align-items: space-evenly;
+  padding:10px 60px;
+  box-shadow: 0px 0px 10px 0px #222;
+}
+.container .field {
+  flex-basis: 1;
+  margin:10px;
+  width:100%;
+  flex-shrink: 0;
+  padding:10px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container .field h2 {
+  color: #ff5722;
+  text-align: center;
+  padding: 30px;
+  margin:0px auto;
+  letter-spacing: 5px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.container .field .label {
+  flex:0.4;
+}
+.container .field .label + * {
+  flex:0.6;
+}
+input, select {
+  padding:10px;
+  border:none;outline:none;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  background-color:transparent;
+}
+[type="submit"] {
+  margin:0 auto;width:300px;
+  padding:20px ;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;;
+  background-color: #ff5722;
+  color:#fff;
+  cursor: pointer;
+}
+
+.field {
+  position: relative;
+}
+.field.required::before {
+  display:flex;
+  transition: all 1s linear;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content:attr(data-capt);
+  inset:50% auto auto calc(100% + 5px);
+  background-color: #ff5722;
+  width:200px;
+  height:40px;
+  z-index: 10;
+  font-size: 14px;
+  transform: translateY(-50%);
+  color:#fff;
+}
+
+.field.required::after {
+  content:"";
+  position:absolute;
+  width:0px;
+  height:0px;
+  right:-5px;
+  border:10px solid ;
+  border-color: transparent #ff5722 transparent transparent;
+  top:50%;
+  transform: translateY(-50%);
+  transition:1s all linear;
+
+}

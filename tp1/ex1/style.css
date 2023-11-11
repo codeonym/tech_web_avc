@@ -1,0 +1,109 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color:#555;
+}
+::selection {
+  color:#fff;background-color: #f05454;;
+}
+.flx {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  height:100vh;
+  background-color: #f05454;
+}
+.container {
+  background-color: #fff;
+  width:600px;
+  flex-direction: column;
+  align-items: space-evenly;
+  padding:10px 60px;
+  /* box-shadow: 0px 0px 10px 0px #999; */
+}
+.container .field {
+  flex-basis: 1;
+  margin:10px;
+  width:100%;
+  flex-shrink: 0;
+  padding:10px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container .field .label {
+  flex:0.4;
+}
+.container .field .label + * {
+  flex:0.6;
+}
+input, select {
+  padding:10px;
+  border:none;outline:none;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  background-color:transparent;
+}
+[type="submit"] {
+  margin:0 auto;width:200px;
+  background-color: #f05454;
+  color:#fff;
+  cursor: pointer;
+}
+
+.container .field .gender {
+  justify-content: space-evenly;
+  height:100%;
+  height:40px;
+}
+.container .field .gender input {
+  display:none;
+}
+.container .field .gender label {
+  width:100px;
+  text-align: center;
+}
+.container .field .gender label.checked {
+  color: #f05454;
+  padding: 6px;
+  border: 2px solid #f05454;
+  box-sizing: border-box;
+  transition:0.2s all ease-in-out;
+}
+.field {
+  position: relative;
+}
+.field.required::before {
+  display:flex;
+  transition: all 1s linear;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content:attr(data-capt);
+  inset:50% auto auto calc(100% + 5px);
+  background-color: #eee;
+  width:200px;
+  height:40px;
+  z-index: 10;
+  font-size: 14px;
+  transform: translateY(-50%);
+  color:#f05454;
+}
+
+.field.required::after {
+  content:"";
+  position:absolute;
+  width:0px;
+  height:0px;
+  right:-5px;
+  border:10px solid ;
+  border-color: transparent #eee transparent transparent;
+  top:50%;
+  transform: translateY(-50%);
+  transition:1s all linear;
+
+}

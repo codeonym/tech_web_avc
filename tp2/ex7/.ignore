@@ -1,0 +1,10 @@
+
+
+Une page (formulaire) qui permet de saisir le nom, le prénom et le numéro de
+téléphone d'une personne.
+2. L'appui sur la touche d'envoi enregistre les coordonnées dans ce fichier.
+3. Une page qui permette de présenter proprement la liste des contacts. Vous avez le
+choix sur le sens à donner au mot « proprement » : en tableau, en liste, etc. L'important
+est que ce soit lisible.
+4. On doit pouvoir passer facilement d'une page à l'autre : soit des liens entre les pages,
+soit une page d'accueil
